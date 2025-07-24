@@ -1649,6 +1649,12 @@ let fund2Texts, fund2Lessons, fund2Titles;
 
 loadApp();
 
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/app/service-worker.js')
+    .then(reg => console.log('✅ Service Worker зареєстровано', reg))
+    .catch(err => console.log('❌ Помилка SW', err));
+}
+
 window.onerror = function(msg, url, lineNo, columnNo, error) {
     alert(`${msg}, ${lineNo}`);
     return false;
