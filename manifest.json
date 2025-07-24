@@ -1,7 +1,7 @@
 {
   "name": "Daily Readings",
   "short_name": "Daily Readings",
-  "start_url": "index.html",
+  "start_url": "app/index.html",
   "display": "standalone",
   "background_color": "#d5ccab",
   "theme_color": "#878568",
