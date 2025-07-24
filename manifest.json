@@ -1,0 +1,15 @@
+{
+  "name": "Daily Readings",
+  "short_name": "Daily Readings",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#d5ccab",
+  "theme_color": "#878568",
+  "icons": [
+    {
+      "src": "https://cdn.glitch.global/c69c58fa-c944-4991-9024-718a4c5de33a/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

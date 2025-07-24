@@ -1,0 +1,599 @@
+:root {
+  --first-color: #d5ccab;
+  --second-color: #a3a289;
+  --third-color: #878568;
+  --forth-color: #505143;
+  --font-size: 16px;
+}
+
+html, body {
+  overscroll-behavior: none;
+  overflow: hidden;
+}
+
+input {
+  outline: 0px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+input[name='name'] {
+  background-color: var(--first-color);
+  border: 0px;
+  width: 70vw;
+  text-align: center;
+  font-size: 4vh;
+  color: var(--third-color)
+}
+
+::placeholder {
+  text-align: center;
+}
+
+.fund-category-cont {
+  height: 90vh;
+}
+
+button { 
+  border: 0px;
+  background-color: var(--first-color);
+  text-decoration: overline;
+  font-size: 4vh;
+  color: var(--forth-color);
+}
+
+#main {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--first-color);
+}
+
+.back-button {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: end;
+  color: var(--second-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 5vh;
+  font-weight: 300;
+  transition: all 0.5s ease;
+}
+
+.back-text-cont {
+  width: calc(100vw - 10vh);
+  height: 10vh;
+  background-color: var(--forth-color);
+  opacity: 0.2;
+  color: var(--first-color);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 2vh;
+}
+
+.logo-container {
+  position: absolute;
+  width: 60vw;
+  left: 20vw;
+  bottom: 20vw;
+}
+
+.greeting {
+  height: 20vh;
+  width: 100vw;
+  color: var(--third-color);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 50px;
+  line-height: 60px;
+  padding: 10px;
+}
+
+div.greeting div:nth-child(2) {
+  color: var(--forth-color);
+  font-weight: 300;
+  font-size: 70px;
+}
+
+.menu {
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  height: 26vh;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+
+.score {
+  color: var(--third-color);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 6vh;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+  height: 10vh;
+}
+
+.calender {
+  display: flex;
+  width: 100vw;
+  height: 44vh;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+
+.day-in-calender {
+  width: calc((100vw - 80px) / 7);
+  height: calc((100vw - 80px) / 7);
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  background-color: var(--second-color);
+  color: var(--first-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-item {
+  position: relative;
+  width: calc(100vw / 3);
+  height: 13vh;
+  background-color: var(--third-color);
+  color: var(--first-color);
+  align-content: end;
+  padding-left: 5px;
+  padding-bottom: 7px;
+  line-height: 2vh;
+  font-weight: 100;
+  font-size: 2.5vh;
+}
+
+.fund-navbar {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fund-menu-item {
+  position: relative;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  align-content: center;
+  color: var(--forth-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 5vh;
+  font-weight: 300;
+  flex-direction: row;
+}
+
+.fund-logo-cont {
+	color: var(--fisrt-color);
+  width: 10vh;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--forth-color);
+}
+
+.title-cont {
+  color: var(--third-color);
+  width: calc(100vw - 10vh);
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  padding-left: 2vh;
+}
+
+.icon {
+  height: 5vh;
+  position: absolute;
+  top: 2vw;
+  left: 2vw;
+  fill: var(--first-color);
+}
+
+.fund-icon {
+  height: 5vh;
+  fill: var(--first-color);
+}
+
+.home-icon {
+  height: 5vh;
+  fill: var(--forth-color);
+  opacity: 0.2;
+}
+
+.back-logo-cont {
+  width: 10vh;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fund-title-cont {
+  color: var(--third-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 5vh;
+  font-weight: 300;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-cont {
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.section-svg {
+  height: 15vh;
+}
+
+.section-title-cont {
+  font-size: 5vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.section-progress-cont {
+  position: absolute;
+  margin: 3px;
+  bottom: 0px;
+  left: 0px;
+  border-radius: 3px;
+  height: 5px;
+}
+
+.section-list-cont {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 90vh;
+}
+
+.lesson-title-cont {
+  font-size: 2vh;
+  color: var(--forth-color);
+  font-family: 'Roboto', sans-serif;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  padding: 1vh 4vw 0px 4vw;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+
+.lesson-progress {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 4px;
+  margin: 0vw 4vw;
+  border-radius: 2px;
+  width: 92vw;
+}
+
+.percent-cont {
+  position: absolute;
+  right: 4vw;
+  bottom: 4px;
+  font-size: 1.2vh;
+  color: var(--forth-color);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.lesson-cont {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 90vh;
+  font-family: 'Roboto', sans-serif;
+  transition: all 0.5s ease;
+}
+
+.blur {
+  filter: blur(10px);
+  pointer-events: none;
+  user-select: none;
+}
+
+.lesson-title {
+  font-size: 3vh;
+  font-weight: 100;
+  padding: 5px;
+}
+
+.expl-cont {
+  background-color: var(--forth-color);
+  padding: 0px 5px;
+  color: var(--first-color);
+  opacity: 0.5;
+  font-size: 3vh;
+  font-weight: 200;
+  line-height: normal;
+}
+
+.address-cont {
+  font-size: 2vh;
+  padding: 0px 5px;
+  font-weight: 300;
+}
+
+.text-cont {
+  font-weight: 200;
+  padding: 0px 30px;
+  font-size: 2vh;
+  position: relative;
+}
+
+.quote-opening {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 30px;
+}
+
+.quote-closing {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 30px;
+}
+
+.quote {
+  height: 2vh;
+  fill: var(--second-color);
+}
+
+.studying-cont, .recent-cont, .select-cont {
+  height: 10vh;
+  color: var(--first-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 5vh;
+  font-weight: 300;
+  padding-left: 2vh;
+  background-color: var(--forth-color);
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+}
+
+.studying-list-cont, .recent-list-cont {
+  overflow: auto;
+  height: 30vh;
+}
+
+.load {
+  width: 4vh;
+  fill: var(--first-color);
+  transition: all 0.5s ease;
+}
+
+.load.move-to-center {
+  width: 15vh;
+}
+
+.study-button {
+  opacity: 0;
+  position: absolute;
+  /* top: 5px;
+  right: 5px; */
+  top: 50%;
+  left: 50%;
+  background-color: var(--forth-color);
+  width: 6vh;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transform: translate(calc(50vw - 6vh - 5px), calc(-50vh + 5px));
+  transition: all 0.5s ease;
+  z-index: 1;
+  /* transition: all 0.5s ease; */
+}
+
+.study-button.visible {
+  opacity: 0.7;
+}
+
+.study-button.move-to-center {
+  transform: translate(-50%, -50%);
+  width: 20vh;
+  height: 20vh;
+}
+
+.study-question-cont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(calc(-50%), calc(10vh));
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.study-question-cont.visible {
+  opacity: 1;
+}
+
+.study-question {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--forth-color);
+  opacity: 0.7;
+  font-size: 7vh;
+  font-weight: 300;
+}
+
+.yes-no-cont {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.yes-no {
+  fill: var(--forth-color);
+  width: 9vh;
+  opacity: 0.7;
+}
+
+.yes-no:nth-of-type(2) {
+  width: 10vh;
+}
+
+.alarm {
+  position: absolute;
+  left: 7.7vh;
+  top: 0vh;
+  display: flex;
+}
+
+.bookmark {
+  fill: lightcoral;
+  width: 2vh;
+}
+
+.lesson {
+  position: relative;
+}
+
+.lesson-title-select {
+  color: var(--forth-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 3vh;
+  font-weight: 200;
+  padding-left: 2vh;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: calc(100vw - 6vh);
+}
+
+.checkbox {
+  height: 3vh;
+  fill: var(--forth-color);
+}
+
+.checkbox-cont {
+  position: absolute;
+  right: 2vh;
+  top: 0.3vh;
+}
+
+.countdown {
+  background-color: var(--second-color);
+  color: var(--first-color);
+  padding-right: 2vh;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5vh;
+  height: 1.7vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.curve-page-cont {
+  height: 90vh;
+}
+
+.lesson-title-curve {
+  color: var(--third-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8vh;
+  font-weight: 300;
+  text-align: center;
+  height: 10vh;
+  line-height: normal;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.curve-cont {
+  position: relative;
+  overflow: auto;
+  height: calc(77vh - 80vw / 203 * 8 - 9px);
+  padding: 0px 10vw;
+}
+
+.scale-cont {
+  position: relative;
+  padding: 0px 10vw;
+  height: calc(80vw / 203 * 8 + 10px);
+}
+
+.percent-info-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: var(--third-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 2vh;
+  font-weight: 300;
+  height: 3vh;
+}
+
+.scale {
+  width: 80vw;
+  position: absolute;
+  bottom: 0px;
+}
+
+.done-round {
+  position: absolute;
+  right: calc(7vw + 80vw / 203 * 3 + 1px);
+  width: 6vw;
+  height: 6vw;
+  fill: var(--third-color);
+  background-color: var(--first-color);
+  border-radius: 50%;
+}
+
+.percent-x-cont {
+  position: absolute;
+  bottom: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5vh;
+  font-weight: 500;
+  color: lightcoral;
+}
+
+.percent-y-cont {
+  position: absolute;
+  left: calc(90vw + 2px);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5vh;
+  font-weight: 500;
+  color: lightcoral;
+}
