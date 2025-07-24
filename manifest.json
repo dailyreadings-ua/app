@@ -1,13 +1,13 @@
 {
   "name": "Daily Readings",
   "short_name": "Daily Readings",
-  "start_url": "/app/",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#d5ccab",
   "theme_color": "#878568",
   "icons": [
     {
-      "src": "/app/logo.png",
+      "src": "logo.png",
       "sizes": "512x512",
       "type": "image/png"
     }
